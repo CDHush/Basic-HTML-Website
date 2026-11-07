@@ -2,27 +2,67 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Hassan's Basic HTML Website</title>
         <meta property="og:title" content="Hassan's Basic HTML Website"/>
         <meta property="og:type" content="website"/>
-        <meta property="description" content="Basic website done with HTML"/>
+        <meta name="description" content="Basic website done with HTML"/>
+        <meta property="og:description" content="Basic website done with HTML"/>
+        <meta name="author" content="Hassan"/>
     </head>
     <body>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="index.html">Hassan's Website</a>
-            </div>
-            <ul class="nav-links">
-                <li class="nav-link"><a href="index.html">Home</a></li>
-                <li class="nav-link"><a href="contact.html">Contact</a></li>
-                <li class="nav-link"><a href="articles.html">Articles</a></li>
-                <li class="nav-link"><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
+        <header>
+            <nav class="navbar" aria-label="Main">
+                <div class="logo">
+                    <a href="index.html">Hassan's Website</a>
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="index.html">Home</a></li>
+                    <li class="nav-link"><a href="contact.html">Contact</a></li>
+                    <li class="nav-link"><a href="articles.html">Articles</a></li>
+                    <li class="nav-link"><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
         <main>
-            <h1>Welcome to Hassan's Basic HTML Website</h1>
+            <h1 class="page-title">Welcome to Hassan's Basic HTML Website</h1>
             <p>This is the home page of Hassan's Basic HTML Website.</p>
+             <aside class="sidebar">
+                    <h2 class="sidebar-title">On This Page</h2>
+                    <nav class="sidebar-nav" aria-label="On this page">
+                        <ul class="sidebar-links">
+                            <li><a href="#introduction">Introduction</a></li>
+                            <li><a href="#latest-works">Latest Projects</a></li>
+                            <li><a href="#about-me">About Me</a></li>
+                        </ul>
+                    </nav>
+            </aside>
+            <section class="introduction" id="introduction">
+                <h2 class="section-title">Introduction</h2>
+                <p>Welcome to Hassan's Basic HTML Website! This website is a simple demonstration of HTML structure and content organization. It includes multiple pages such as Home, Contact, Articles, and Projects.</p>
+            </section>
+            <section class="latest-works" id="latest-works">
+                <h2 class="section-title">Latest Works</h2>
+                <p>Check out the latest articles and projects that Hassan has been working on.</p>
+                <ul class="featured-projects">
+                    <li class="project-item">
+                        <h3 class="project-title">Project 1</h3>
+                        <p>A brief description of the first project.</p>
+                    </li>
+                    <li class="project-item">
+                        <h3 class="project-title">Project 2</h3>
+                        <p>A brief description of the second project.</p>
+                    </li>
+                </ul>
+            </section>
+            <section class="about-me" id="about-me">
+                <h2 class="section-title">About Me</h2>
+                <p>Hassan is a web developer with a passion for creating simple and effective web solutions. This website serves as a portfolio and a learning tool for HTML and web development concepts.</p>            
+            </section>
         </main>
+        <footer class="footer">
+            <p>&copy; 2026 Hassan's Basic HTML Website. All rights reserved.</p>
+        </footer>
     </body>
 </html>
+           
