@@ -2,4 +2,4 @@
 
 A website built in HTML only
 
-https://roadmap.sh/projects/single-page-cv
+https://roadmap.sh/projects/basic-html-website
